@@ -16,3 +16,7 @@ The current files may look like a Chrome Extension, but it's not one yet.
 ## Contributing
 
 Feel free to make a PR! But please read the [guidelines](./CONTRIBUTING.md) first.
+
+## License
+
+Open source MIT. Feel free to use/modify/whatever.
