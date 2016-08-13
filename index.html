@@ -1,0 +1,20 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="style.css">
+		<script>
+			function disabledExtension(){
+				chrome.browserAction.setPopup({index: ""});
+			}
+		</script>
+	</head>
+	
+	<body>
+		<div id="menu">
+			<h3>Options</h3>
+			<ul>
+				<li onclick="disabledExtension();">Disable the extension</li>
+			</ul>
+		</div>
+	</body>
+</html>
