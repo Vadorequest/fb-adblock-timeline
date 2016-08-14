@@ -2,7 +2,7 @@
 // ==UserScript==
 // @name           Facebook AdBlock for your Timeline
 // @namespace      http://tampermonkey.net/
-// @version        0.0.2
+// @version        1.0.0
 // @description    Hide ads from Facebook on your timeline
 // @author         Vadorequest
 // @include        https://www.facebook.com/*
@@ -16,15 +16,23 @@
 class App
 
     constructor: ->
-        @debug = true
-        @appName = "Facebook AdBlock"
+        @debug = false # Display logs.
+        @appName = "Facebook AdBlock" # Used in logs.
         console.log "#{@appName} - Starting" if @debug
 
-        @delay = 3000
-        @adClass = 'userContentWrapper'
+        @delay = 3000 # Delay between two attempts to delete a fracking ad.
+        @adClass = 'userContentWrapper' # Class used by facebook to identify a <div> container. Used as a way to check we are deleting the right thing.
+
+        # Texts to look for. Currently, there are only 2 different texts used by facebook.
+        # TODO Handle I18n. Or just put a big array with all possibilities. (may be complicated to check the user language settings?)
         @texts = [
+            # EN
             'Suggested Post'
             'Sponsored'
+
+            # FR
+            'Publication suggérée'
+            'Sponsorisé'
         ]
 
         # Run recursively.
@@ -48,11 +56,16 @@ class App
             container = @findParentClassLike(@result)
             container.remove() if container?
             console.log "#{@appName} - Ad deleted, looking for another", container if @debug and container
+
+            # TODO Do something smart about this. It basically means we haven't found a proper container. Many possible reasons:
+            # 1. FB has changed the container class name (most likely)
+            # 2. There must be more reasons for this to fail, haven't found them yet!
             console.log "#{@appName} - Couldn't find the container of the ad" if @debug and not container
 
             # Look for another one right away in case of there would be several at once (ie: fast scroll).
             @run()
 
+    # Main program. For each text, tries to find a result. If so, deletes it. Additionally run recursively.
     run: (recursive = false) =>
         setTimeout =>
             @texts.map (text) =>
@@ -63,6 +76,7 @@ class App
             @run(@delay) if recursive
         , @delay
 
+    # Try to find a parent <div> containing the class we're looking for. (In order to identify the ad container)
     findParentClassLike: (el) =>
         while el.parentNode
             el = el.parentNode
@@ -70,4 +84,5 @@ class App
                 return el
         null
 
+# TRACK AND KILL THEM ALL!
 App = new App()

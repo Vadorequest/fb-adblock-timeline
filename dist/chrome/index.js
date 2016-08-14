@@ -3,7 +3,7 @@
 // ==UserScript==
 // @name           Facebook AdBlock for your Timeline
 // @namespace      http://tampermonkey.net/
-// @version        0.0.2
+// @version        1.0.0
 // @description    Hide ads from Facebook on your timeline
 // @author         Vadorequest
 // @include        https://www.facebook.com/*
@@ -22,14 +22,14 @@ App = (function() {
     this.run = bind(this.run, this);
     this.removeAds = bind(this.removeAds, this);
     this.find = bind(this.find, this);
-    this.debug = true;
+    this.debug = false;
     this.appName = "Facebook AdBlock";
     if (this.debug) {
       console.log(this.appName + " - Starting");
     }
     this.delay = 3000;
     this.adClass = 'userContentWrapper';
-    this.texts = ['Suggested Post', 'Sponsored'];
+    this.texts = ['Suggested Post', 'Sponsored', 'Publication suggérée', 'Sponsorisé'];
     if (this.debug) {
       console.log(this.appName + " - Starting recursive search of ads");
     }

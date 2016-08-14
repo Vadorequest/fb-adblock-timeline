@@ -1,6 +1,6 @@
 {
   "name": "fb-adblock-timeline",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "description": "Hide ads from Facebook on your timeline",
   "main": "dist/index.js",
   "scripts": {
@@ -31,6 +31,8 @@
     "gulp-sass": "^2.3.2",
     "gulp-sass-lint": "^1.2.0",
     "gulp-uglify": "^2.0.0",
+    "gulp-yaml": "^1.0.1",
+    "gulp-yml": "^0.1.1",
     "node-notifier": "^4.6.0"
   }
 }

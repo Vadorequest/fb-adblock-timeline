@@ -1,0 +1,32 @@
+﻿{
+    "manifest_version": 2,
+    "name": "Facebook AdBlock for your Timeline",
+    "description": "Hide ads from Facebook on your timeline",
+    "version": "1.0.0",
+    "browser_action": {
+        "default_icon": "assets/icon_19.png",
+        "default_popup": "src/popup.html"
+    },
+    "icons": {
+        "19": "assets/icon_19.png",
+        "48": "assets/icon_48.png",
+        "128": "assets/icon_128.png"
+    },
+    "content_scripts": [
+        {
+            "exclude_globs": [],
+            "include_globs": [
+                "*"
+            ],
+            "js": [
+                "index.js"
+            ],
+            "matches": [
+                "http://www.facebook.com/*",
+                "http://facebook.com/*",
+                "https://facebook.com/*",
+                "https://www.facebook.com/*"
+            ]
+        }
+    ]
+}
