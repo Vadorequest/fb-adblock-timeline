@@ -1,0 +1,36 @@
+{
+  "name": "fb-adblock-timeline",
+  "version": "0.0.2",
+  "description": "Hide ads from Facebook on your timeline",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vadorequest/fb-adblock-timeline.git"
+  },
+  "author": "Vadorequest",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Vadorequest/fb-adblock-timeline/issues"
+  },
+  "homepage": "https://github.com/Vadorequest/fb-adblock-timeline#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-cached": "^1.1.0",
+    "gulp-coffee": "^2.3.2",
+    "gulp-coffeelint": "^0.6.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-htmlmin": "^2.0.0",
+    "gulp-initial-cleaning": "0.0.1",
+    "gulp-inject": "^4.1.0",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.2",
+    "gulp-sass-lint": "^1.2.0",
+    "gulp-uglify": "^2.0.0",
+    "node-notifier": "^4.6.0"
+  }
+}

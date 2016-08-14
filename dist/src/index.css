@@ -1,0 +1,60 @@
+html,
+body,
+div,
+p,
+span,
+img,
+a,
+ul,
+li,
+em,
+font,
+small,
+strong,
+sub,
+sup,
+b,
+u,
+i,
+input,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+noscript,
+object,
+fieldset,
+form,
+label,
+caption,
+legend {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: 0;
+  float: none; }
+
+#menu {
+  width: 180px;
+  height: 50px;
+  margin: 0 auto;
+  padding: 0; }
+  #menu h3 {
+    color: #999;
+    margin: 5px auto 0;
+    text-align: center; }
+  #menu ul {
+    width: 100%;
+    margin-top: 10px;
+    list-style: none; }
+    #menu ul > li {
+      color: #cc0000;
+      background: #FFF;
+      padding: 2px 5px;
+      cursor: pointer;
+      display: block; }
+      #menu ul > li:hover {
+        color: #EEE;
+        background: #b80000; }

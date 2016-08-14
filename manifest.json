@@ -1,17 +1,18 @@
 ﻿{
-    "manifest_version": 1,
-    "name": "Facebook AdBlock - Sponsored",
-    "description": "Hide sponsored content on your Facebook's timeline",
-    "version": "0.0.1",
+    "manifest_version": 2,
+    "name": "Facebook AdBlock for your Timeline",
+    "description": "Hide ads from Facebook on your timeline",
+    "version": "0.0.2",
+    "default_locale": "en",
     "browser_action": {
-        "default_icon": "icon_19.png",
-        "default_popup": "index.html"
+        "default_icon": "assets/icon_19.png",
+        "default_popup": "src/popup.html"
     },
     "icons": {
-        "19": "icon_19.png",
-        "48": "icon_48.png",
-        "128": "icon_128.png",
-        "disabled": "icon_disabled.png"
+        "19": "assets/icon_19.png",
+        "48": "assets/icon_48.png",
+        "128": "assets/icon_128.png",
+        "disabled": "assets/icon_disabled.png"
     },
     "content_scripts": [
         {
@@ -20,7 +21,7 @@
                 "*"
             ],
             "js": [
-                "main.js"
+                "dist/index.js"
             ],
             "matches": [
                 "http://www.facebook.com/*",

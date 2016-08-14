@@ -2,6 +2,17 @@
 
 This is a *userscript* as it that looks into the DOM of facebook pages to find specific patterns in order to delete ads that are located within the timeline.
 
+## Running the project
+
+You need to have node.js installed as well as npm. This project has been built using node `v6.2.0` but should likely work with any node `0.12.x+`.
+
+- `npm install`
+- `gulp look` or `gulp`
+
+Only update the files in the `src` folder. The files in the `dist` folder are not to be modified manually, gulp takes care of that.
+
+_The `dist` folder is only tracked by git to allow third-party support like automated update from_ https://openuserjs.org
+
 ## TODO list:
 
 - Publish as a userscript.
