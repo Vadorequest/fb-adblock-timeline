@@ -10,7 +10,10 @@
 
 ## 0.0.2 - 14/08/16
 
-- TODO
+- Change architecture. Use scr, dist and assets folders.
+- Use coffeelint and sass-lint. Enforce coding-style rules.
+- Use gulp to generate the dist folder.
+- Update documentation accordingly.
 
 ## 0.0.1 - 13/08/16
 

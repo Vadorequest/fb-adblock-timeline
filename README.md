@@ -1,3 +1,6 @@
+[![Code Climate](https://codeclimate.com/github/Vadorequest/fb-adblock-timeline/badges/gpa.svg)](https://codeclimate.com/github/Vadorequest/fb-adblock-timeline)
+[![Issue Count](https://codeclimate.com/github/Vadorequest/fb-adblock-timeline/badges/issue_count.svg)](https://codeclimate.com/github/Vadorequest/fb-adblock-timeline)
+
 # README
 
 This is a *userscript* as it that looks into the DOM of facebook pages to find specific patterns in order to delete ads that are located within the timeline.
