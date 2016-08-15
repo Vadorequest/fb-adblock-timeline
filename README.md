@@ -29,9 +29,7 @@ That's it. You can now browse Tampermonkey to install more scripts!
 
 ### 2. Chrome extension
 
-Gotta wait for it. :/
-
-In progress.
+Install at https://chrome.google.com/webstore/detail/efodhgbopaihacnjakjllbfdhhpioafo
 
 ## Running the project
 
@@ -45,16 +43,15 @@ Only update the files in the `src` folder. The files in the `dist` folder are no
 
 _The `dist` folder is only tracked by git to allow third-party support like automated update from_ https://openuserjs.org
 
-## TODO list:
+## Possible improvements:
 
-- [x] Publish as a userscript.
-- [x] Make a Chrome extension. Publish it.
-    - [x] Need icons (19, 48, 128, disabled) (replace current ones, they're just for testing, I stole them from my brother!) =D
-- [ ] Support multiple languages (`texts` in hard?)
-- [ ] Use a DB of sort to share `texts` (acts as a blacklist)
-- [ ] Settings to update the blacklist.
+I'm mostly concerned about the languages limitations, here are some ideas to deal with it.
+I won't look into it, except if it gets used by many people. But feel free to propose something if you have any idea.
 
-*The current files may look like a Chrome Extension, but it's not one yet.*
+- Support multiple languages 
+    - [x] `texts` in hard? -> *That's what's done at the moment, need manual change or PR*
+    - [ ] Use a DB of sort to share `texts` (acts as a blacklist)
+    - [ ] Settings to update the blacklist.
 
 ## Contributing
 
