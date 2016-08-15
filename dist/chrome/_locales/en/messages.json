@@ -1,10 +1,10 @@
 {
     "appName": {
-        "message": "Facebook AdBlock for your Timeline",
+        "message": "Facebook AdBlock for your Timeline.",
         "description": "The title of the application, displayed in the web store."
     },
     "extDescription": {
-        "message": "Hide ads from Facebook on your timeline",
+        "message": "Hide ads from Facebook on your timeline.",
         "description": "The description of the application, displayed in the web store."
     }
 }

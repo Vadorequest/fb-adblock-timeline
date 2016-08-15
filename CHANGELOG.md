@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 1.0.2 - 15/08/16
+
+- Fix typos.
+
 ## 1.0.1 - 15/08/16
 
 - Add icons. (Thanks to @TyrionGraphiste)

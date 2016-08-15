@@ -3,9 +3,8 @@
 
 # README
 
-This is a *userscript* as it that looks into the DOM of facebook pages to find specific patterns in order to delete ads that are located within the timeline.
-
-## Intro
+**"Facebook AdBlock for your Timeline"**: Basically hides all ads injected by Facebook in your timeline (any content labeled as "Sponsored" or "Suggested post"). 
+(This doesn't hide ads in other parts of the Facebook website, only on the timeline, for now)
 
 There are two ways to use this tool.
 
@@ -19,7 +18,8 @@ The script manager basically allow you to load, enable/disable, modify and delet
 
 Pretty straight-forward:
 
-1. Install [Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo) if you don't have it. (P.S: You can use another script manager of your own, but this one is a good one if you don't have any)
+1. Install [Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo) if you don't have it. 
+(P.S: You can use another script manager of your own, but this one is a good one if you don't have any)
 1. Load the [userscript](./dist/userscript/fb-adblock-timeline.user.js) and enable it.
 1. Enjoy the magic *(refresh facebook page to apply)*
 
