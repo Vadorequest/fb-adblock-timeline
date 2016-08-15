@@ -43,6 +43,10 @@ Only update the files in the `src` folder. The files in the `dist` folder are no
 
 _The `dist` folder is only tracked by git to allow third-party support like automated update from_ https://openuserjs.org
 
+## Where can I look at the JavaScript code?
+
+The files in the `dist` folders are minified, so don't look there. Look at the [source](./src/index.coffee)! :)
+
 ## Possible improvements:
 
 I'm mostly concerned about the languages limitations, here are some ideas to deal with it.
