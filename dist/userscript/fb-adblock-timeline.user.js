@@ -5,6 +5,7 @@
 // @version        1.0.0
 // @description    Hide ads from Facebook on your timeline
 // @author         Vadorequest
+// @supportURL     https://github.com/Vadorequest/fb-adblock-timeline/issues
 // @include        https://www.facebook.com/*
 // @include        https://facebook.com/*
 // @include        http://www.facebook.com/*
