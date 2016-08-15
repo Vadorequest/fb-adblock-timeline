@@ -1,2 +1,4 @@
 .idea/
 node_modules/
+chrome.crx
+chrome.pem
