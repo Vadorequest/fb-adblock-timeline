@@ -1,6 +1,6 @@
 {
   "name": "fb-adblock-timeline",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Hide ads from Facebook on your timeline",
   "main": "dist/index.js",
   "scripts": {

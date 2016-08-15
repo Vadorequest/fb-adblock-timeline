@@ -3,7 +3,7 @@
 // ==UserScript==
 // @name           Facebook AdBlock for your Timeline
 // @namespace      http://tampermonkey.net/
-// @version        1.0.0
+// @version        1.0.1
 // @description    Hide ads from Facebook on your timeline
 // @author         Vadorequest
 // @supportURL     https://github.com/Vadorequest/fb-adblock-timeline/issues

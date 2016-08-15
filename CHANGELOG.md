@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 1.0.1 - 15/08/16
+
+- Add icons. (Thanks to @TyrionGraphiste)
+
 ## 1.0.0 - 15/08/16
 
 - Add valid Chrome extension - Not published yet, waiting for pictures.
