@@ -72,6 +72,7 @@ gulp.task 'coffee-chrome', ->
     .pipe(coffeelint('coffeelint.json'))
     .pipe(coffeelint.reporter())
     .pipe(coffee(bare: true))
+    .pipe(uglify())
     .pipe(gulp.dest('dist/chrome/'))
 
 gulp.task 'assets-chrome', ->
@@ -100,6 +101,12 @@ gulp.task 'html-chrome', ['coffee-chrome'], ->
     .pipe(cache('html'))
     .pipe(gulp.dest('dist/chrome/'))
 
+gulp.task 'locales-chrome', ['coffee-chrome'], ->
+    gulp.src('src/_locales/**/*.json')
+    .pipe(plumber())
+    .pipe(cache('html'))
+    .pipe(gulp.dest('dist/chrome/_locales/'))
+
 # ----------------- Tasks to use ------------------ #
 
 # Chrome extension.
@@ -109,6 +116,7 @@ gulp.task 'chrome', [
     'manifest-chrome'
     'sass-chrome'
     'html-chrome'
+    'locales-chrome'
 ]
 
 # Userscript
